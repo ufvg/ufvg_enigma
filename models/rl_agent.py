@@ -25,7 +25,7 @@ class BTCRLTrader:
         """
         Train RL model using PPO
         """
-        from models.environment import TradingEnvironment
+        from models.environments import TradingEnvironment
         
         # Create environment
         env = DummyVecEnv([lambda: TradingEnvironment(self.train_data.values)])
