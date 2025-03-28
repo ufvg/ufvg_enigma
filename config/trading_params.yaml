@@ -1,0 +1,23 @@
+trading_strategy:
+  risk_tolerance: 0.02  # 2% per trade
+  stop_loss_percentage: 1.5
+  take_profit_percentage: 3.0
+
+feature_engineering:
+  technical_indicators:
+    - rsi
+    - macd
+    - bollinger_bands
+    - atr
+  lookback_periods: 
+    short: 14
+    medium: 50
+    long: 200
+
+hyperparameters:
+  learning_rate: 0.0003
+  batch_size: 64
+  exploration_rate:
+    initial: 1.0
+    min: 0.1
+    decay: 0.9995
