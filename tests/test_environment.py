@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from models.environment import TradingEnvironment
+from models.environments import TradingEnvironment
 
 class TestTradingEnvironment(unittest.TestCase):
     def setUp(self):
